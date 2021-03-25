@@ -17,6 +17,7 @@ public class Product implements Serializable {
 	private String category;	//분류
 	private long unitsInStock;	//재고 수
 	private String condition;	//신상, 중고, 재고
+	private String filename;	//이미지 파일명
 	
 	public Product() {
 		// TODO Auto-generated constructor stub
@@ -27,8 +28,6 @@ public class Product implements Serializable {
 		this.pname = pname;
 		this.unitPrice = unitPrice;
 	}
-
-
 
 	public String getProductId() {
 		return productId;
@@ -78,6 +77,10 @@ public class Product implements Serializable {
 	public void setCondition(String condition) {
 		this.condition = condition;
 	}
-	
-	
+	public String getFilename() {
+		return filename;
+	}
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
 }
