@@ -18,8 +18,8 @@
 		</div>
 	</div>
 	<%
-		ProductRepository dao = ProductRepository.getInstance();
-		ArrayList<Product> listOfProducts = dao.getAllProduct();
+	ProductRepository dao = ProductRepository.getInstance();
+			ArrayList<Product> listOfProducts = dao.getAllProducts();
 	%>
 	<div class="container">
 		<div class="row" align="center">

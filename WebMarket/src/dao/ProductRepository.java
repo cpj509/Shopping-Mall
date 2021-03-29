@@ -44,7 +44,7 @@ public class ProductRepository {
 		return instance;
 	}
 	
-	public ArrayList<Product> getAllProduct(){	//목록 출력
+	public ArrayList<Product> getAllProducts(){	//목록 출력
 		return listOfProducts;
 	}
 	
