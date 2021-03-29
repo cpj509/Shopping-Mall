@@ -8,7 +8,8 @@
 <%
 	request.setCharacterEncoding("utf-8");
 
-	String realFolder = "C:\\Users\\JMP Korea\\Documents\\Shopping-Mall\\WebMarket\\WebContent\\upload";
+	//String realFolder = "C:\\Users\\JMP Korea\\Documents\\Shopping-Mall\\WebMarket\\WebContent\\upload";
+	String realFolder = "D:\\GitHub\\Shopping-Mall\\WebMarket\\WebContent\\upload";
 	int maxSize = 5 * 1024 * 1024;
 	String encType = "utf-8";
 	
@@ -21,7 +22,7 @@
 	String description = multi.getParameter("description");
 	String manufacturer = multi.getParameter("manufacturer");
 	String category = multi.getParameter("category");
-	String unitInStock = multi.getParameter("unitInStock");
+	String unitsInStock = multi.getParameter("unitsInStock");
 	String condition = multi.getParameter("condition");
 	
 	//가격
@@ -35,10 +36,10 @@
 	//재고 수
 	long stock;
 	
-		if(unitInStock.isEmpty())
+		if(unitsInStock.isEmpty())
 		stock = 0;
 	else
-		stock = Long.valueOf(unitInStock);
+		stock = Long.valueOf(unitsInStock);
 	
 	//파일 가져오기
 	Enumeration<String> files = multi.getFileNames();	//파일을 넘겨받음.
